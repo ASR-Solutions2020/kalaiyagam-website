@@ -8,57 +8,31 @@
             <div class="item active">
                 <img src="image/banner1.jpg">
                 <div class="content">
-                    <p>FLOOR PLANS</p>
                     <h2>FLOOR PLANS</h2>
                     <p>
-                      We make the Best Floor Plans
+                      We make the Best Floor Plans both in 2D & 3D.
                     </p>
                 </div>
             </div>
             <div class="item">
-                <img src="image/img2.jpg">
+                <img src="image/banner2.jpg">
                 <div class="content">
-                    <p>design</p>
-                    <h2>Slider 02</h2>
+                    <h2>CONSTRUCTION</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                      We Build Your Dream Home with Care.
                     </p>
                 </div>
             </div>
             <div class="item">
-                <img src="image/img3.jpg">
+                <img src="image/banner3.jpg">
                 <div class="content">
-                    <p>design</p>
-                    <h2>Slider 03</h2>
+                    <h2>Interior & Exterior Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                      Give a 'VOW' Experience to your home with our Specialized Interior and Exterior Design Works.
                     </p>
                 </div>
             </div>
-            <div class="item">
-                <img src="image/img4.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 04</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img5.jpg">
-                <div class="content">
-                    <p>design</p>
-                    <h2>Slider 05</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
-                    </p>
-                </div>
-            </div>
+            
         </div>
         <!-- button arrows -->
         <div class="arrows">
@@ -66,37 +40,26 @@
             <button id="next">></button>
         </div>
         <!-- thumbnail -->
-        <div class="thumbnail">
+        <div class="thumbnail" >
             <div class="item active">
                 <img src="image/banner1.jpg">
                 <div class="content">
-                    Name Slider
+                    Floor Plans
                 </div>
             </div>
             <div class="item">
-                <img src="image/img2.jpg">
+                <img src="image/banner2.jpg">
                 <div class="content">
-                    Name Slider
+                    Construction
                 </div>
             </div>
             <div class="item">
-                <img src="image/img3.jpg">
+                <img src="image/banner3.jpg">
                 <div class="content">
-                    Name Slider
+                    Interior & Exterior Design
                 </div>
             </div>
-            <div class="item">
-                <img src="image/img4.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
-            <div class="item">
-                <img src="image/img5.jpg">
-                <div class="content">
-                    Name Slider
-                </div>
-            </div>
+           
         </div>
     </div>
 
