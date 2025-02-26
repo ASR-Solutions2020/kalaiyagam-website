@@ -69,3 +69,93 @@ document.querySelectorAll('.service-card, .project-card, section h2, .testimonia
   el.classList.add('fade-up');
   observer.observe(el);
 });
+
+// Carousel functionality
+const carousel = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel-slide');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const indicators = document.querySelectorAll('.carousel-indicators .indicator');
+let currentSlide = 0;
+let autoSlideInterval;
+
+function showSlide(index) {
+  // Handle index bounds
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  
+  // Update current slide
+  currentSlide = index;
+  
+  // Remove active class from all slides and indicators
+  slides.forEach(slide => slide.classList.remove('active'));
+  indicators.forEach(indicator => indicator.classList.remove('active'));
+  
+  // Add active class to current slide and indicator
+  slides[currentSlide].classList.add('active');
+  indicators[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+// Event listeners for carousel controls
+nextBtn.addEventListener('click', () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+prevBtn.addEventListener('click', () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Indicator buttons
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener('click', () => {
+    showSlide(index);
+    resetAutoSlide();
+  });
+});
+
+// Auto slide functionality
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+// Touch events for mobile swipe
+let touchStartX = 0;
+let touchEndX = 0;
+
+carousel.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+carousel.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+}, false);
+
+function handleSwipe() {
+  if (touchEndX < touchStartX - 50) {
+    nextSlide();
+    resetAutoSlide();
+  }
+  if (touchEndX > touchStartX + 50) {
+    prevSlide();
+    resetAutoSlide();
+  }
+}
+
+// Initialize carousel
+startAutoSlide();
