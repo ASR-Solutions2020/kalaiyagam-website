@@ -515,6 +515,7 @@ header .menu{
 .about-brief {
   padding: var(--section-spacing) 5%;
   background: #fff;
+  margin-top:15px;
 }
 
 .about-content {
