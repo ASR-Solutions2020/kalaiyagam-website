@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: url('../images/contactus.webp') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    animation: slideFromTop 1.5s ease-out forwards;
+  
+  }
+  
+
+  @keyframes slideFromTop  {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+  .container{
+    display:flex;
+    max-width:80%;
+    min-height:75vh;
+    transition: all  0.5s ease-in-out;
+    
+  }
+  
+  .left ,.right
+  {
+    flex:1;
+    padding:20px;
+    border-radius: 25px;
+    margin:20px;
+    
+    
+  }
+  
+  .left{
+  background-color:rgb(248,249,250 ,0.9);
+  }
+  
+  .right{
+    background-color: rgb(81, 36, 178);
+  opacity: 0.8;  
+    }
+  
+  
+  .feedback_form input ,.feedback_form textarea {
+  width:90%;
+  padding:10px;
+  margin:10px;
+  }
+  
+  .feedback_form button{
+    background-color: #571c9a;
+    border: none;
+    width:30%;
+    align-items: center;
+    justify-content: center;
+    margin-left:30%;
+    margin-right: 30%;
+    color:white;
+    border-radius: 25px;
+    height:35px;
+  }
+  .feedback_form button :hover{
+    
+    transform: scale(1.1);
+  }
+  
+  h{
+    color:black;
+    font-weight: bolder;
+    margin:10px;
+  }
